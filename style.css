@@ -1,0 +1,156 @@
+:root {
+    --background-color: #f4f6f9;
+    --text-color: #202633;
+    --card-color: #ffffff;
+    --accent-color: #2563eb;
+    --muted-color: #64748b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: var(--card-color);
+}
+
+.brand {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    width: min(1000px, 90%);
+    margin: 35px auto;
+}
+
+.profile {
+    text-align: center;
+    padding: 25px 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+.subtitle {
+    color: var(--muted-color);
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    margin-top: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+
+.about, .contact {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 22px;
+    background: var(--card-color);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.contact form {
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--accent-color);
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.theme-button {
+    display: block;
+    margin: 25px auto;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: var(--card-color);
+    color: var(--muted-color);
+}
+
+/* Dark mode colors are controlled by CSS. */
+body.dark {
+    --background-color: #111827;
+    --text-color: #f3f4f6;
+    --card-color: #1f2937;
+    --accent-color: #60a5fa;
+    --muted-color: #cbd5e1;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}

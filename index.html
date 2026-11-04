@@ -1,0 +1,79 @@
+<!--
+Student Name: Yosef Reda Shaban Abdlghfar
+Academic ID: 225104705
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosef Reda Shaban Abdlghfar | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="brand" href="#home">Yosef Reda</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="profile">
+            <h1>Yosef Reda Shaban Abdlghfar</h1>
+            <p class="subtitle">Computer Science Student</p>
+            <img class="profile-photo" src="images/me.jpg" alt="A personal photo of Yosef">
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Yosef, a Computer Science student at New Mansoura University.
+               I enjoy learning technology, solving problems, and developing my skills.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Profile</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Skills</h3>
+                    <p>Programming, problem solving, and learning new technologies.</p>
+                </article>
+                <article class="card">
+                    <h3>Hobbies</h3>
+                    <p>Playing games, walking, and spending time with friends.</p>
+                </article>
+                <article class="card">
+                    <h3>Goals</h3>
+                    <p>Improve my programming skills and build useful projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <button type="submit">Send</button>
+            </form>
+            <p id="greeting" aria-live="polite"></p>
+        </section>
+
+        <button id="theme-button" class="theme-button" type="button">Toggle dark mode</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yosef Reda Shaban Abdlghfar. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
